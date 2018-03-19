@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === `/test`) {
-    msg.reply('I am Online');
+    msg.reply('I am :online:');
   }
 });
 
