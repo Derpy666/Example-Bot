@@ -12,12 +12,6 @@ client.on("message", (message) => {
 
   if (!message.content.startsWith(prefix)) return;
 
-  if (message.content === (prefix + "simple")) {
-    message.channel.send({embed: {
-      color: 3447003,
-      description: "A very simple Embed!"
-    }});
-
   if (message.content === (prefix + "discord")) {
     message.channel.send("**__Discord Link:__**\n \nhttps://discord.gg/JuuVp5D");
   } else
