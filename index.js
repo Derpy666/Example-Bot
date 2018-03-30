@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-const newUsers = [];
+const Array = [];
 
 client.on('ready', () => {
   client.user.setStatus("dnd");
