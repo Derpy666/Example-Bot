@@ -29,6 +29,17 @@ client.on("message", (message) => {
   } else
   if (message.content === (prefix + "help")) {
     message.author.sendMessage("__MigServer Commands:__\n \n**/network discord ** - Discord Link\n**/network creator** - The Creators of the Bot\n**/network apply** - Staff Apply\n**/network ping** - Show to you how much Ping you have\n**/network invite** - Invite the Bot\n**/network youtube** - Show to you the link to Youtube Channel\n**/network avatar** - show your avatar profile\n**/network help** - Show this Menu");
+  } else
+  if (message.content === (prefix + "test")) {
+   message.channel.send({embed: {
+    color: 3447003,
+    title: "This is an embed (Title)",
+    description: "Embed! (first line)\nsecond line of Desc\nthird line of Desc",
+    footer: 
+    {
+        text: "Footnote ©"
+    }
+  }});
   }
 });
 
@@ -43,25 +54,5 @@ client.on("message", (message) => {
       message.reply(message.author.avatarURL);
     }
   });
-
-   if (message.content.startsWith(prefix + "emb")) {
-   console.log("Sending an embedd message");
-   message.channel.send({embed: {
-    color: 3447003,
-    title: "This is an embed (Title)",
-    description: "Embed! (first line)\nsecond line of Desc\nthird line of Desc",
-    footer: 
-    {
-        text: "Footnote ©"
-    }
-  }});
-} else   if (message.content.startsWith(prefix + "test")) 
-  {
-  message.reply("Bot active");
-
-
-  };
-
- });
 
 client.login(process.env.BOT_TOKEN);
