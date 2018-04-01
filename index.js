@@ -70,8 +70,8 @@ client.on("message", (message) => {
 });
 
   client.on('message', message => {
-    if (message.content === '/network ping') {
-      msg.reply('Pong! The ping is **${(client.ping).toFixed(0)}**ms!  :ping_pong:');
+    if (message.content === `/network ping`) {
+      msg.reply(`Pong! The ping is **${(client.ping).toFixed(0)}**ms!  :ping_pong:`);
     }
   });
 
