@@ -28,6 +28,7 @@ client.on("message", (message) => {
     message.channel.send("**__Youtube Cahnnel:__**\n \nhttps://www.youtube.com/channel/UCuPaetf28pN6knc1MdpriCg?view_as=subscriber");
   } else
   if (message.content === (prefix + "help")) {
+    message.reply("Please check your direct messages");
     message.author.sendMessage({embed: {
      color: 3447003,
      title: "__MigServer Commands:__",
