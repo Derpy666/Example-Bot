@@ -55,8 +55,7 @@ client.on("message", (message) => {
    message.channel.send({embed: {
     color: 3447003,
     title: "This is an embed (Title)",
-    description: "Embed! (first line)\nsecond line of Desc\nthird line of 
-   Desc",
+    description: "Embed! (first line)\nsecond line of Desc\nthird line of Desc",
     footer: 
     {
         text: "Footnote ©"
