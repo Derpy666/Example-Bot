@@ -84,7 +84,7 @@ client.on("message", (message) => {
 
   client.on('message', message => {
     if (message.content === '/network test') {
-      message.reply("I am Online" :online:);
+      message.reply("I am Online :online:");
     }
   });
 
