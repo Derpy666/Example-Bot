@@ -7,6 +7,7 @@ client.on('ready', () => {
   console.log("Reload Completed!");
 });
 
+const bo = client.emojis.get("online", "online").toString;
 const prefix = "/network ";
 client.on("message", (message) => {
 
@@ -78,6 +79,12 @@ client.on("message", (message) => {
   client.on('message', message => {
     if (message.content === '/network avatar') {
       message.reply(message.author.avatarURL);
+    }
+  });
+
+  client.on('message', message => {
+    if (message.content === '/network test') {
+      message.reply(I am Online :online:);
     }
   });
 
