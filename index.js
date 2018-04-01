@@ -13,7 +13,15 @@ client.on("message", (message) => {
   if (!message.content.startsWith(prefix)) return;
 
   if (message.content === (prefix + "discord")) {
-    message.channel.send("**__Discord Link:__**\n \nhttps://discord.gg/JuuVp5D");
+    message.channel.send({embed: {
+      color: 3447003,
+      title: "__MigServer Discord:__\n \n",
+      description: "** **\nhttps://discord.gg/JuuVp5D",
+      footer: 
+      {
+          text: "MigServer Network"
+      }
+    }});
   } else
   if (message.content === (prefix + "apply")) {
     message.channel.send("**__Staff Apply:__**\n \nhttps://docs.google.com/forms/d/e/1FAIpQLSdAcbc6iCUbI_YnKiMAKwXVxl87nuDJFb5WbA_Mutthrw4BDw/viewform");
