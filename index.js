@@ -3,7 +3,7 @@ const client = new Discord.Client();
 var bot = new Discord.Client();
 
 client.on('ready', () => {
-  client.user.setStatus("dnd");
+  client.user.setStatus("online");
   client.user.setGame("/network help | MigServer Bot");
   console.log("Reload Completed!");
 });
