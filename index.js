@@ -7,7 +7,13 @@ client.on('ready', () => {
   console.log("Reload Completed!");
 });
 
-const bo = client.emojis.get("online", "online").toString;
+const client = new commando.Client({
+    commandPrefix: '/network ',
+    owner: '311604263379795970',
+    disableEveryone: true,
+    unknownCommandResponse: false
+});
+
 const prefix = "/network ";
 client.on("message", (message) => {
 
