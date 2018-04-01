@@ -40,6 +40,7 @@ client.on("message", (message) => {
   } else
   if (message.content === (prefix + "invite")) {
     message.author.sendMessage("**__Invite The Bot:__**\n \nhttps://discordapp.com/api/oauth2/authorize?client_id=426357120993198090&permissions=0&scope=bot");
+    message.reply("Please check your direct messages :mailbox_with_no_mail:");
   } else
   if (message.content === (prefix + "youtube")) {
     message.channel.send("**__Youtube Cahnnel:__**\n \nhttps://www.youtube.com/channel/UCuPaetf28pN6knc1MdpriCg?view_as=subscriber");
