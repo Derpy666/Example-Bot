@@ -37,7 +37,7 @@ client.on("message", (message) => {
          text: "MigServer Network"
      }
    }});
-    message.reply("Please check your direct messages");
+    message.reply("Please check your direct messages :mailbox_with_no_mail:");
   }
 });
 
