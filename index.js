@@ -50,4 +50,25 @@ client.on("message", (message) => {
     }
   });
 
+   if (message.content.startsWith(prefix + "emb")) {
+   console.log("Sending an embedd message");
+   message.channel.send({embed: {
+    color: 3447003,
+    title: "This is an embed (Title)",
+    description: "Embed! (first line)\nsecond line of Desc\nthird line of 
+   Desc",
+    footer: 
+    {
+        text: "Footnote ©"
+    }
+  }});
+} else   if (message.content.startsWith(config.prefix + "test")) 
+  {
+  message.reply("Bot active");
+
+
+  };
+
+ });
+
 client.login(process.env.BOT_TOKEN);
