@@ -28,7 +28,7 @@ client.on("message", (message) => {
     message.channel.send("**__Youtube Cahnnel:__**\n \nhttps://www.youtube.com/channel/UCuPaetf28pN6knc1MdpriCg?view_as=subscriber");
   } else
   if (message.content === (prefix + "help")) {
-    message.author.sendMessage("__MigServer Commands:__\n \n**/network discord ** - Discord Link\n**/network creator** - The Creators of the Bot\n**/network apply** - Staff Apply\n**/network test** - for know if the Bot is Online\n**/network ping** - Show to you how much Ping you have\n**/network invite** - Invite the Bot\n**/network youtube** - Show to you the link to Youtube Channel\n**/network avatar** - show your avatar profile\n**/network help** - Show this Menu");
+    message.author.sendMessage("__MigServer Commands:__\n \n**/network discord ** - Discord Link\n**/network creator** - The Creators of the Bot\n**/network apply** - Staff Apply\n**/network ping** - Show to you how much Ping you have\n**/network invite** - Invite the Bot\n**/network youtube** - Show to you the link to Youtube Channel\n**/network avatar** - show your avatar profile\n**/network help** - Show this Menu");
   }
 });
 
@@ -44,12 +44,6 @@ client.on("message", (message) => {
     }
   });
 
-  client.on('message', message => {
-    if (message.content === '/network test') {
-      message.reply("I am Online");
-    }
-  });
-
    if (message.content.startsWith(prefix + "emb")) {
    console.log("Sending an embedd message");
    message.channel.send({embed: {
@@ -61,7 +55,7 @@ client.on("message", (message) => {
         text: "Footnote ©"
     }
   }});
-} else   if (message.content.startsWith(config.prefix + "test")) 
+} else   if (message.content.startsWith(prefix + "test")) 
   {
   message.reply("Bot active");
 
