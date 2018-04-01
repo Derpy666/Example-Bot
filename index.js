@@ -45,7 +45,7 @@ client.on("message", (message) => {
   } else
   if (message.content === (prefix + "help")) {
     message.author.sendMessage({embed: {
-     color: 3447003,
+     color: 0xbf0000,
      title: "__MigServer Commands:__\n \n",
      description: "** **\n**/network discord ** - Discord Link\n**/network creator** - The Creators of the Bot\n**/network apply** - Staff Apply\n**/network ping** - Show to you how much Ping you have\n**/network invite** - Invite the Bot\n**/network youtube** - Show to you the link to Youtube Channel\n**/network avatar** - show your avatar profile\n**/network ranks** - Show to you the Ranks list of the Server\n**/network help** - Show this Menu",
      footer: 
