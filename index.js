@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+var bot = new Discord.Client();
 
 client.on('ready', () => {
   client.user.setStatus("dnd");
@@ -80,5 +81,9 @@ client.on("message", (message) => {
       message.reply(message.author.avatarURL);
     }
   });
+
+bot.on("guildMemberAdd", member => {
+    let mem = member.guild
+    mem.defaultChannel.sendMessage(member.user + " welcome to the server!"); });
 
 client.login(process.env.BOT_TOKEN);
