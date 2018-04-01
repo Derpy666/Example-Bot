@@ -66,14 +66,11 @@ client.on("message", (message) => {
      }
    }});
     message.reply("Please check your direct messages :mailbox_with_no_mail:");
+  } else
+  if (message.content === (prefix + "ping")) {
+    msg.reply("Pong! The ping is **${(client.ping).toFixed(0)}**ms!  :ping_pong:");
   }
 });
-
-  client.on('message', msg => {
-    if (msg.content === `/network ping`) {
-      msg.reply(`Pong! The ping is **${(client.ping).toFixed(0)}**ms!  :ping_pong:`)
-    }
-  });
 
   client.on('message', message => {
     if (message.content === '/network avatar') {
