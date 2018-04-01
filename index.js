@@ -30,8 +30,20 @@ client.on("message", (message) => {
   if (message.content === (prefix + "help")) {
     message.author.sendMessage({embed: {
      color: 3447003,
-     title: "__MigServer Commands:__",
+     title: "__MigServer Commands:__\n \n",
      description: "**/network discord ** - Discord Link\n**/network creator** - The Creators of the Bot\n**/network apply** - Staff Apply\n**/network ping** - Show to you how much Ping you have\n**/network invite** - Invite the Bot\n**/network youtube** - Show to you the link to Youtube Channel\n**/network avatar** - show your avatar profile\n**/network help** - Show this Menu",
+     footer: 
+     {
+         text: "MigServer Network"
+     }
+   }});
+    message.reply("Please check your direct messages :mailbox_with_no_mail:");
+  } else
+  if (message.content === (prefix + "ranks")) {
+    message.author.sendMessage({embed: {
+     color: 3447003,
+     title: "__MigServer Ranks:__\n \n",
+     description: "**OWNER**\n**CO-OWNER**\n**MANAGER**\n**S-MANAGER**\n**D-MANAGER**\n**DEV**\n**H-ADMIN**\n**ADMIN**\n**M-MANAGER**\n**MOD**\n**HELPER**\n**B-MANAGER**\n**BUILDER**\n**YOUTUBER**\n**LEGEND**\n**SUPER**\n**HERO+**\n**HERO**\n**VIP+**\n**VIP**\n**MEMBER**",
      footer: 
      {
          text: "MigServer Network"
