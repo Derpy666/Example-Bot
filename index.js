@@ -24,7 +24,15 @@ client.on("message", (message) => {
     }});
   } else
   if (message.content === (prefix + "apply")) {
-    message.channel.send("**__Staff Apply:__**\n \nhttps://docs.google.com/forms/d/e/1FAIpQLSdAcbc6iCUbI_YnKiMAKwXVxl87nuDJFb5WbA_Mutthrw4BDw/viewform");
+    message.channel.send({embed: {
+      color: 3447003,
+      title: "__MigServer Apply:__\n \n",
+      description: "** **\nhttps://docs.google.com/forms/d/e/1FAIpQLSdAcbc6iCUbI_YnKiMAKwXVxl87nuDJFb5WbA_Mutthrw4BDw/viewform",
+      footer: 
+      {
+          text: "MigServer Network"
+      }
+    }});
   } else
   if (message.content === (prefix + "creator")) {
     message.channel.send("The Creator of the Bot is `Derpy#6522`");
