@@ -81,10 +81,4 @@ client.on("message", (message) => {
     }
   });
 
-  client.on('message', message => {
-    if (message.content === '/network test') {
-      message.reply("I am Online :online:");
-    }
-  });
-
 client.login(process.env.BOT_TOKEN);
