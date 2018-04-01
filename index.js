@@ -33,11 +33,11 @@ client.on("message", (message) => {
   if (message.content === (prefix + "test")) {
    message.channel.send({embed: {
     color: 3447003,
-    title: "This is an embed (Title)",
-    description: "Embed! (first line)\nsecond line of Desc\nthird line of Desc",
+    title: "__MigServer Commands:__",
+    description: "**/network discord ** - Discord Link\n**/network creator** - The Creators of the Bot\n**/network apply** - Staff Apply\n**/network ping** - Show to you how much Ping you have\n**/network invite** - Invite the Bot\n**/network youtube** - Show to you the link to Youtube Channel\n**/network avatar** - show your avatar profile\n**/network help** - Show this Menu",
     footer: 
     {
-        text: "Footnote ©"
+        text: "MigServer Network"
     }
   }});
   }
