@@ -7,13 +7,6 @@ client.on('ready', () => {
   console.log("Reload Completed!");
 });
 
-const client = new commando.Client({
-    commandPrefix: '/network ',
-    owner: '311604263379795970',
-    disableEveryone: true,
-    unknownCommandResponse: false
-});
-
 const prefix = "/network ";
 client.on("message", (message) => {
 
