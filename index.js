@@ -83,8 +83,10 @@ client.on("message", (message) => {
     }
   });
 
-bot.on("guildMemberAdd", member => {
-    let mem = member.guild
-    mem.defaultChannel.sendMessage(member.user + " welcome to the server!"); });
+  client.on('message', message => {
+    if (message.content === 'test') {
+      message.reply("I am Online");
+    }
+  });
 
 client.login(process.env.BOT_TOKEN);
