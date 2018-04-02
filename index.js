@@ -89,10 +89,4 @@ client.on("message", (message) => {
     }
   });
 
-{
-  // invalid code
-} catch(e) {
-  console.log("invalid command")
-}
-
 client.login(process.env.BOT_TOKEN);
