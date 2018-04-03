@@ -84,10 +84,10 @@ client.on("message", (message) => {
   });
 
   client.on('message', message => {
+  Discord.Constants.Permissions["administrator"]
     if (message.content === 'test') {
       message.reply("I am Online");
     }
-  Discord.Constants.Permissions["administrator"]
   });
 
 {
