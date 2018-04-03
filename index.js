@@ -84,41 +84,9 @@ client.on("message", (message) => {
   });
 
   client.on('message', message => {
-  Discord.Constants.Permissions["administrator"]
     if (message.content === 'test') {
       message.reply("I am Online");
     }
   });
-
-{
-        // general
-        administrator,
-        createInstantInvite,
-        kickMembers,
-        banMembers,
-        manageRoles,
-        managePermissions,
-        manageChannels,
-        manageChannel,
-        manageServer,
-        changeNickname,
-        manageNicknames,
-        // text
-        readMessages,
-        sendMessages,
-        sendTTSMessages,
-        manageMessages,
-        embedLinks,
-        attachFiles,
-        readMessageHistory,
-        mentionEveryone,
-        // voice
-        voiceConnect,
-        voiceSpeak,
-        voiceMuteMembers,
-        voiceDeafenMembers,
-        voiceMoveMembers,
-        voiceUseVAD
-};
 
 client.login(process.env.BOT_TOKEN);
