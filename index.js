@@ -20,6 +20,7 @@ client.on("message", (message) => {
       description: "** **\nhttps://discord.gg/JuuVp5D",
       footer: 
       {
+          icon_url: client.user.avatarURL,
           text: "MigServer Network"
       }
     }});
@@ -31,6 +32,7 @@ client.on("message", (message) => {
       description: "** **\nhttps://docs.google.com/forms/d/e/1FAIpQLSdAcbc6iCUbI_YnKiMAKwXVxl87nuDJFb5WbA_Mutthrw4BDw/viewform",
       footer: 
       {
+          icon_url: client.user.avatarURL,
           text: "MigServer Network"
       }
     }});
@@ -52,6 +54,7 @@ client.on("message", (message) => {
      description: "** **\n**/network discord ** - Discord Link\n**/network creator** - The Creators of the Bot\n**/network apply** - Staff Apply\n**/network ping** - Show to you how much Ping you have\n**/network invite** - Invite the Bot\n**/network youtube** - Show to you the link to Youtube Channel\n**/network avatar** - show your avatar profile\n**/network ranks** - Show to you the Ranks list of the Server\n**/network help** - Show this Menu",
      footer: 
      {
+         icon_url: client.user.avatarURL,
          text: "MigServer Network"
      }
    }});
@@ -64,6 +67,7 @@ client.on("message", (message) => {
      description: "** **\n**OWNER**\n**CO-OWNER**\n**MANAGER**\n**S-MANAGER**\n**D-MANAGER**\n**DEV**\n**H-ADMIN**\n**ADMIN**\n**M-MANAGER**\n**MOD**\n**HELPER**\n**B-MANAGER**\n**BUILDER**\n**YOUTUBER**\n**LEGEND**\n**SUPER**\n**HERO+**\n**HERO**\n**VIP+**\n**VIP**\n**MEMBER**",
      footer: 
      {
+         icon_url: client.user.avatarURL,
          text: "MigServer Network"
      }
    }});
