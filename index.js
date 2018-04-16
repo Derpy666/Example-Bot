@@ -37,18 +37,6 @@ client.on("message", (message) => {
       }
     }});
   } else
-  if (message.content === (prefix + "ip")) {
-    message.channel.send({embed: {
-      color: 3447003,
-      title: "__MigServer IP:__\n \n",
-      description: "** **\n**migserver.mcnetwork.me**",
-      footer: 
-      {
-          icon_url: client.user.avatarURL,
-          text: "MigServer Network"
-      }
-    }});
-  } else
   if (message.content === (prefix + "creator")) {
     message.channel.send("The Creator of the Bot is `Derpy#6522`");
   } else
@@ -84,6 +72,18 @@ client.on("message", (message) => {
      }
    }});
     message.reply("Please check your direct messages :mailbox_with_no_mail:");
+  } else
+  if (message.content === (prefix + "ip")) {
+    message.channel.send({embed: {
+      color: 3447003,
+      title: "__MigServer IP:__\n \n",
+      description: "** **\n**migserver.mcnetwork.me**",
+      footer: 
+      {
+          icon_url: client.user.avatarURL,
+          text: "MigServer Network"
+      }
+    }});
   }
 });
 
