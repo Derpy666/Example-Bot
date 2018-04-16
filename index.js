@@ -48,7 +48,7 @@ client.on("message", (message) => {
     message.author.sendMessage({embed: {
      color: 0xbf0000,
      title: "__MigServer Commands:__\n \n",
-     description: "** **\n**/network discord ** - Discord Link\n**/network creator** - The Creators of the Bot\n**/network apply** - Staff Apply\n**/network ping** - Show to you how much Ping you have\n**/network invite** - Invite the Bot\n**/network youtube** - Show to you the link to Youtube Channel\n**/network avatar** - show your avatar profile\n**/network ranks** - Show to you the Ranks list of the Server\n**/network help** - Show this Menu",
+     description: "** **\n**/network discord ** - Discord Link\n**/network creator** - The Creators of the Bot\n**/network apply** - Staff Apply\n**/network ping** - Show to you how much Ping you have\n**/network youtube** - Show to you the link to Youtube Channel\n**/network ip** - the IP of the Server\n**/network vote** - Vote Link\n**/network avatar** - show your avatar profile\n**/network ranks** - Show to you the Ranks list of the Server\n**/network help** - Show this Menu",
      footer: 
      {
          icon_url: client.user.avatarURL,
@@ -87,6 +87,18 @@ client.on("message", (message) => {
       color: 3447003,
       title: "__MigServer Youtube Channel:__\n \n",
       description: "** **\nhttps://www.youtube.com/channel/UCuPaetf28pN6knc1MdpriCg?view_as=subscriber",
+      footer: 
+      {
+          icon_url: client.user.avatarURL,
+          text: "MigServer Network"
+      }
+    }});
+  } else
+  if (message.content === (prefix + "vote")) {
+    message.channel.send({embed: {
+      color: 3447003,
+      title: "__MigServer Vote Website:__\n \n",
+      description: "** **\nhttps://topg.org/Minecraft/in-489313",
       footer: 
       {
           icon_url: client.user.avatarURL,
