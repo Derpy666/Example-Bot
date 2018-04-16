@@ -105,6 +105,30 @@ client.on("message", (message) => {
           text: "MigServer Network"
       }
     }});
+ } else
+  if (message.content === (prefix + "website")) {
+    message.channel.send({embed: {
+      color: 3447003,
+      title: "__MigServer Website:__\n \n",
+      description: "** **\n**SOON**",
+      footer: 
+      {
+          icon_url: client.user.avatarURL,
+          text: "MigServer Network"
+      }
+    }});
+ } else
+  if (message.content === (prefix + "store")) {
+    message.channel.send({embed: {
+      color: 3447003,
+      title: "__MigServer Store:__\n \n",
+      description: "** **\n**SOON**",
+      footer: 
+      {
+          icon_url: client.user.avatarURL,
+          text: "MigServer Network"
+      }
+    }});
   }
 });
 
