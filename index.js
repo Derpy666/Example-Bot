@@ -48,7 +48,7 @@ client.on("message", (message) => {
     message.author.sendMessage({embed: {
      color: 0xbf0000,
      title: "__MigServer Commands:__\n \n",
-     description: "** **\n**/network discord ** - Discord Link\n**/network creator** - The Creators of the Bot\n**/network apply** - Staff Apply\n**/network ping** - Show to you how much Ping you have\n**/network youtube** - Show to you the link to Youtube Channel\n**/network ip** - the IP of the Server\n**/network vote** - Vote Link\n**/network avatar** - show your avatar profile\n**/network ranks** - Show to you the Ranks list of the Server\n**/network help** - Show this Menu",
+     description: "** **\n**/network discord ** - Discord Link\n**/network creator** - The Creators of the Bot\n**/network apply** - Staff Apply\n**/network ping** - Show to you how much Ping you have\n**/network youtube** - Show to you the link to Youtube Channel\n**/network ip** - the IP of the Server\n**/network vote** - Vote Link\n**/network avatar** - show your avatar profile\n**/network ranks** - Show to you the Ranks list of the Server\n**/network store** - Store of the Server\n**/network website** - The Website of the Server\n**/network help** - Show this Menu",
      footer: 
      {
          icon_url: client.user.avatarURL,
