@@ -84,6 +84,18 @@ client.on("message", (message) => {
           text: "MigServer Network"
       }
     }});
+  } else
+  if (message.content === (prefix + "youtube")) {
+    message.channel.send({embed: {
+      color: 3447003,
+      title: "__MigServer Youtube Channel:__\n \n",
+      description: "** **\nhttps://www.youtube.com/channel/UCuPaetf28pN6knc1MdpriCg?view_as=subscriber",
+      footer: 
+      {
+          icon_url: client.user.avatarURL,
+          text: "MigServer Network"
+      }
+    }});
   }
 });
 
