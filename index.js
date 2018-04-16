@@ -37,6 +37,18 @@ client.on("message", (message) => {
       }
     }});
   } else
+  if (message.content === (prefix + "ip")) {
+    message.channel.send({embed: {
+      color: 3447003,
+      title: "__MigServer IP:__\n \n",
+      description: "** **\n**migserver.mcnetwork.me**",
+      footer: 
+      {
+          icon_url: client.user.avatarURL,
+          text: "MigServer Network"
+      }
+    }});
+  } else
   if (message.content === (prefix + "creator")) {
     message.channel.send("The Creator of the Bot is `Derpy#6522`");
   } else
@@ -64,7 +76,7 @@ client.on("message", (message) => {
     message.author.sendMessage({embed: {
      color: 3447003,
      title: "__MigServer Ranks:__\n \n",
-     description: "** **\n**OWNER**\n**CO-OWNER**\n**MANAGER**\n**S-MANAGER**\n**D-MANAGER**\n**DEV**\n**H-ADMIN**\n**ADMIN**\n**M-MANAGER**\n**MOD**\n**HELPER**\n**B-MANAGER**\n**BUILDER**\n**YOUTUBER**\n**LEGEND**\n**SUPER**\n**HERO+**\n**HERO**\n**VIP+**\n**VIP**\n**MEMBER**",
+     description: "** **\n**OWNER**\n**CO-OWNER**\n**S-MANAGER**\n**D-MANAGER**\n**DEV**\n**H-ADMIN**\n**ADMIN**\n**M-MANAGER**\n**MOD**\n**HELPER**\n**B-MANAGER**\n**BUILDER**\n**YOUTUBER**\n**LEGEND**\n**SUPER**\n**HERO+**\n**HERO**\n**VIP+**\n**VIP**\n**MEMBER**",
      footer: 
      {
          icon_url: client.user.avatarURL,
