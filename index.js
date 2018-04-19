@@ -137,8 +137,6 @@ client.on("message", (message) => {
       fields: [{
              name: "Members",
              value: "message.guild.memberCount"
-           },
-           {
            }
          ],
          timestamp: new Date(),
