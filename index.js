@@ -134,7 +134,7 @@ client.on("message", (message) => {
     message.channel.send({embed: {
       color: 3447003,
       title: "__MigServer Information:__\n \n",
-      description: ("Server Name", message.guild.name),
+      description: "Server Name:" (message.guild.name),
       footer: 
       {
           icon_url: client.user.avatarURL,
