@@ -134,7 +134,7 @@ client.on("message", (message) => {
     message.channel.send({embed: {
       color: 3447003,
       title: "__MigServer Members Count:__\n \n",
-      description: "Members:"(message.guild.memberCount),
+      description: ("Members:", message.guild.memberCount),
       footer: 
       {
           icon_url: client.user.avatarURL,
