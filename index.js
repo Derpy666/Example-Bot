@@ -133,7 +133,8 @@ client.on("message", (message) => {
  if (message.content === (prefix + "membercount")) {
     message.channel.send({embed: {
       color: 3447003,
-      title: "__MigServer Members Count:__\n \n",
+      title: "__Server Members Count:__\n \n",
+      description: "** **",
       fields: [{
              name: "Members",
              value: (message.guild.memberCount)
