@@ -136,8 +136,29 @@ client.on("message", (message) => {
       title: "__Server Members Count:__\n \n",
       description: "** **",
       fields: [{
-             name: "Members",
+             name: "Members:",
              value: (message.guild.memberCount)
+           }
+         ],
+         timestamp: new Date(),
+         footer: {
+           icon_url: client.user.avatarURL,
+           text: "MigServer Network"
+       }
+     }});
+ } else
+ if (message.content === (prefix + "serverinfo")) {
+    message.channel.send({embed: {
+      color: 3447003,
+      title: "__Server Information:__\n \n",
+      description: "** **",
+      fields: [{
+             name: "Server Name:",
+             value: (message.guild.name)
+           },
+           {
+            name: "Created On:",
+            value: "message.guild.createdAt"
            }
          ],
          timestamp: new Date(),
