@@ -129,6 +129,19 @@ client.on("message", (message) => {
           text: "MigServer Network"
       }
     }});
+ } else
+   let sicon = message.guild.iconURL;
+    let serverembed = new Discord.RichEmbed()
+     .setDescription("MigServer Information")
+     .setColor("#15f153")
+     .setThumbnail(sicon)
+     .addField("Server Name", message.guild.name)
+     .addField("Created On", message.guild.createdAt)
+     .addField("Joined At", message.member.joinedAt)
+     .addField("Members", message.guild.memberCount);
+
+   return message.channel.send(serverembed);
+ }
   }
 });
 
