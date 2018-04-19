@@ -130,18 +130,17 @@ client.on("message", (message) => {
       }
     }});
  } else
-   let sicon = message.guild.iconURL;
-    let serverembed = new Discord.RichEmbed()
-     .setDescription("MigServer Information")
-     .setColor("#15f153")
-     .setThumbnail(sicon)
-     .addField("Server Name", message.guild.name)
-     .addField("Created On", message.guild.createdAt)
-     .addField("Joined At", message.member.joinedAt)
-     .addField("Members", message.guild.memberCount);
-
-   return message.channel.send(serverembed);
- }
+ if (message.content === (prefix + "serverinfo")) {
+    message.channel.send({embed: {
+      color: 3447003,
+      title: "__MigServer Information:__\n \n",
+      description: ("Server Name", message.guild.name),
+      footer: 
+      {
+          icon_url: client.user.avatarURL,
+          text: "MigServer Network"
+      }
+    }});
   }
 });
 
