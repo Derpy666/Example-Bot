@@ -136,7 +136,7 @@ client.on("message", (message) => {
       title: "__MigServer Members Count:__\n \n",
       fields: [{
              name: "Members",
-             value: "message.guild.memberCount"
+             value: (message.guild.memberCount)
            },
            {
       footer: 
