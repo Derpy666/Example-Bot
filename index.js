@@ -136,15 +136,17 @@ client.on("message", (message) => {
       title: "__MigServer Members Count:__\n \n",
       fields: [{
              name: "Members",
-             value: (message.guild.memberCount)
+             value: "message.guild.memberCount"
            },
            {
-      footer: 
-      {
-          icon_url: client.user.avatarURL,
-          text: "MigServer Network"
-      }
-    }});
+           }
+         ],
+         timestamp: new Date(),
+         footer: {
+           icon_url: client.user.avatarURL,
+           text: "MigServer Network"
+       }
+     }});
   }
 });
 
