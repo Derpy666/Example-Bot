@@ -130,11 +130,11 @@ client.on("message", (message) => {
       }
     }});
  } else
- if (message.content === (prefix + "serverinfo")) {
+ if (message.content === (prefix + "membercount")) {
     message.channel.send({embed: {
       color: 3447003,
-      title: "__MigServer Information:__\n \n",
-      description:("Server Name", message.guild.name)\n("Created On", message.guild.createdAt)\n("Joined At", message.member.joinedAt)\n("Members", message.guild.memberCount);
+      title: "__MigServer Members Count:__\n \n",
+      description:(message.guild.memberCount);
       footer: 
       {
           icon_url: client.user.avatarURL,
