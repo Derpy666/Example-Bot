@@ -194,7 +194,6 @@ client.on("message", (message) => {
     }
   });
  
-
   client.on('message', message => {
     if (message.content === 'test') {
       message.reply("I am Online, for start type `/network help`");
@@ -206,11 +205,5 @@ client.on("message", (message) => {
      msg.reply("You need to Mention User")
    }
  });
-
- default:
-             message.channel.send("Unknown Command.");
-             console.log(${message.author.tag} Unknown Command!)
-     }
- });
-
+ 
 client.login(process.env.BOT_TOKEN);
