@@ -147,6 +147,16 @@ client.on("message", (message) => {
        }
      }});
  } else
+ if(message.content.startsWith(prefix + "avatar ")) { //IF for the command.
+     if(message.mentions.users.first()) { //Check if the message has a mention in it.
+           let user = message.mentions.users.first(); //Since message.mentions.users returns a collection; we must use the first() method to get the first in the collection.
+           let output = user.tag /*Nickname and Discriminator*/ +
+           "\nAvatar URL: " + user.avatarURL; /*The Avatar URL*/
+           message.channel.sendMessage(output); //We send the output in the current channel.
+    } else {
+          message.reply("Invalid user."); //Reply with a mention saying "Invalid user."
+    }
+ } else
  if (message.content === (prefix + "serverinfo")) {
     message.channel.send({embed: {
       color: 3447003,
@@ -195,5 +205,17 @@ client.on("message", (message) => {
       message.reply("I am Online, for start type `/network help`");
     }
   });
+
+ client.on('message', msg => {
+  if (msg.content === '/avatar') {
+    msg.reply("You need to Mention User")
+  }
+});
+
+default:
+            message.channel.send("Unknown Command.");
+            console.log(${message.author.tag} Unknown Command!)
+    }
+});
 
 client.login(process.env.BOT_TOKEN);
