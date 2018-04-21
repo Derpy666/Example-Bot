@@ -193,12 +193,7 @@ client.on("message", (message) => {
       message.reply(`Pong! The ping is **${(client.ping).toFixed(0)}**ms!  :ping_pong:`);
     }
   });
-
-  client.on('message', message => {
-    if (message.content === '/network avatar') {
-      message.reply(message.author.avatarURL);
-    }
-  });
+ 
 
   client.on('message', message => {
     if (message.content === 'test') {
@@ -214,6 +209,7 @@ client.on("message", (message) => {
 
 default:
             message.channel.send("Unknown Command.");
+            console.log(${message.author.tag} Unknown Command!)
     }
 });
 
