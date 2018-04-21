@@ -201,7 +201,7 @@ client.on("message", (message) => {
   });
 
   client.on('message', msg => {
-   if (msg.content === '/avatar') {
+   if (msg.content === '/network avatar') {
      msg.reply("You need to Mention User")
    }
  });
