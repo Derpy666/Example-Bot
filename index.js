@@ -201,16 +201,16 @@ client.on("message", (message) => {
     }
   });
 
- client.on('message', msg => {
-  if (msg.content === '/avatar') {
-    msg.reply("You need to Mention User")
-  }
-});
+  client.on('message', msg => {
+   if (msg.content === '/avatar') {
+     msg.reply("You need to Mention User")
+   }
+ });
 
-default:
-            message.channel.send("Unknown Command.");
-            console.log(${message.author.tag} Unknown Command!)
-    }
-});
+ default:
+             message.channel.send("Unknown Command.");
+             console.log(${message.author.tag} Unknown Command!)
+     }
+ });
 
 client.login(process.env.BOT_TOKEN);
