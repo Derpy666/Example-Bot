@@ -214,7 +214,6 @@ client.on("message", (message) => {
 
 default:
             message.channel.send("Unknown Command.");
-            console.log(${message.author.tag} Unknown Command!)
     }
 });
 
