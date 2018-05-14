@@ -447,19 +447,19 @@ if(message.content.startsWith(prefix + "avatar ")) { //IF for the command.
  }});
 
 bot.on('message', msg => {
-  if (msg.content === '/ping') {
+  if (msg.content === '/network ping') {
     msg.reply(`Pong! The ping is **${(bot.ping).toFixed(0)}**ms!  :ping_pong:`)
   }
 });
 
 bot.on('message', msg => {
-  if (msg.content === '/help') {
+  if (msg.content === '/network help') {
     msg.reply(`Check your dms`)
   }
 });
 
 bot.on('message', msg => {
-  if (msg.content === '/avatar') {
+  if (msg.content === '/network avatar') {
     msg.reply(`You need Mention someone`)
   }
 });
@@ -467,7 +467,7 @@ bot.on('message', msg => {
 bot.on('message', msg => {
   if (msg.content === 'test') {
   if(!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send("You dont have the permissions `ADMINISTRATOR`");
-    msg.reply(`I am Online, for start type **/help**`)
+    msg.reply(`I am Online, for start type **/network help**`)
   }
 });
  
