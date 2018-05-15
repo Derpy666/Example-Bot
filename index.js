@@ -3,28 +3,21 @@ const color = require("./color.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 const swearWords = ["fuck", "shit"];
- 
-//bot.on("ready", async () => {
-  //console.log(`${bot.user.username} is online!`);
-
-  //bot.user.setActivity("bots", {type: "MAKING"});
-
-  //bot.user.setGame("${server} Servers | /help");
 
 bot.on("ready", async () => {
   console.log(`Bot is Online!`);
-bot.user.setActivity(`MigServer Network | /network help`, {type: "WATCHING"});
+bot.user.setActivity(`/network help | created by Derpy`, {type: "PLAYING"});
 });
 
 // Updates the bot's status if he joins a server
 bot.on("guildCreate", guild => {
-bot.user.setActivity(`MigServer Network | /network help`, {type: "WATCHING"});
+bot.user.setActivity(`/network help | created by Derpy`, {type: "PLAYING"});
 });
 
 /// Updates the bot's status if he leaves a servers
 bot.on("guildDelete", guild => {
 bot.user.setActivity(
-        `MigServer Network | /network help`, {type: "WATCHING"});
+        `/network help | created by Derpy`, {type: "PLAYING"});
 });
 
 //welcome join
@@ -355,12 +348,7 @@ if( swearWords.some(word => message.content.includes(word)) ) {
     .setDescription("Help Commands")
     .setColor("#268ccf")
     .setThumbnail(bicon)
-    .addField("Moderation","/kick (user) (reason) - Kick a User.\n/ban (user) (reason) - Ban a User.\n/unban (user) - unban a User. (Soon)\n/report (user) (reason) - report about User.\n/mute (user) (reason) - Mute a User.\n/unmute (user) (reason) - unMute a User. (Soon)\n/warn (user) (reason) - Warn a User. (Soon)\n/clear (number) - Clear the chat.")
-    .addField("Servers","/serverinfo - Server Informations.\n/botinfo - Bot Informations.\n/membercount - Member Count.\n/say (message) - say your message.\n/vote (question) - Vote about Question\n/avatar @user - Avatar of the user.\n/ping - Ping Pong")
-    .addField("Economy","Soon")
-    .addField("NSFW","Soon")
-    .addField("Music","Soon")
-    .addField("Leveling","Soon");
+    .addField("Soon");
 
     return message.author.send(botembed);
   }
@@ -471,5 +459,4 @@ bot.on('message', msg => {
   }
 });
  
-
 bot.login(process.env.BOT_TOKEN);
