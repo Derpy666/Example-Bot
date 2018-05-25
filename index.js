@@ -44,7 +44,7 @@ bot.on("message", async message => {
     .addField("Music","/play - Play  Music.\n/search - Search a Music.\n/skip - Skip a Music.\n/stop - Stop a Music.\n/volume - Volume the Music.\n/np - Show what song right now playing.\n/queue - Show what song right now playing.\n/pause - Pause the Music.\n/resume - Resume the Music.")
     .addField("Utilites","/serverinfo - Server Informations.\n/botinfo - Bot Informations.\n/membercount - Member Count.\n/avatar [@user] - Avatar of the user.\n/ping - Ping Pong.\n/staff - show you the staff member of WatchDog Bot Support DIscord.\n/vote - vote for the bot link.\n/invite - invite the bot link.");
     return message.author.send(botembed);
-    return message.channel.send("Check your Direct Messages!");
+    //return message.channel.send("Check your Direct Messages!");
   };
 });
  
