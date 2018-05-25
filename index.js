@@ -4,17 +4,17 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`Bot is Online!`);
-bot.user.setActivity(`/mig help | Created by Derpy`, {type: "PLAYING"});
+bot.user.setActivity(`/help | Made by Derpy`, {type: "PLAYING"});
 });
 
 // Updates the bot's status if he joins a server
 bot.on("guildCreate", guild => {
-bot.user.setActivity(`/mig help | Created by Derpy`, {type: "PLAYING"});
+bot.user.setActivity(`/help | Made by Derpy`, {type: "PLAYING"});
 });
 
 /// Updates the bot's status if he leaves a servers
 bot.on("guildDelete", guild => {
-bot.user.setActivity(`/mig help | Created by Derpy`, {type: "PLAYING"});
+bot.user.setActivity(`/help | Mad by Derpy`, {type: "PLAYING"});
 });
 
 bot.on("message", async message => {
