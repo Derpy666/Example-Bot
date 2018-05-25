@@ -4,17 +4,17 @@ const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
   console.log(`Bot is Online!`);
-bot.user.setActivity(`/help | created by Derpy`, {type: "PLAYING"});
+bot.user.setActivity(`/mig help | Created by Derpy`, {type: "PLAYING"});
 });
 
 // Updates the bot's status if he joins a server
 bot.on("guildCreate", guild => {
-bot.user.setActivity(`/help | created by Derpy`, {type: "PLAYING"});
+bot.user.setActivity(`/mig help | Created by Derpy`, {type: "PLAYING"});
 });
 
 /// Updates the bot's status if he leaves a servers
 bot.on("guildDelete", guild => {
-bot.user.setActivity(`/help | created by Derpy`, {type: "PLAYING"});
+bot.user.setActivity(`/mig help | Created by Derpy`, {type: "PLAYING"});
 });
 
 bot.on("message", async message => {
@@ -44,6 +44,7 @@ bot.on("message", async message => {
     .addField("Music","/play - Play  Music.\n/search - Search a Music.\n/skip - Skip a Music.\n/stop - Stop a Music.\n/volume - Volume the Music.\n/np - Show what song right now playing.\n/queue - Show what song right now playing.\n/pause - Pause the Music.\n/resume - Resume the Music.")
     .addField("Utilites","/serverinfo - Server Informations.\n/botinfo - Bot Informations.\n/membercount - Member Count.\n/avatar [@user] - Avatar of the user.\n/ping - Ping Pong.\n/staff - show you the staff member of WatchDog Bot Support DIscord.\n/vote - vote for the bot link.\n/invite - invite the bot link.");
     return message.author.send(botembed);
+    return message.channel.send("Check your Direct Messages!");
   };
 });
  
