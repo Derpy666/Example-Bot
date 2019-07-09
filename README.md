@@ -1,1 +1,1 @@
-# Boting
+# Bot
