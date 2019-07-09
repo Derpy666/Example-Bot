@@ -1,15 +1,14 @@
 {
   "name": "bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "my first bot",
   "main": "index.js",
   "dependencies": {
     "discord.js": "^11.3.2"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "node ."
   },
-  "author": "me",
+  "author": "Derpy",
   "license": "ISC"
 }
