@@ -8,7 +8,7 @@ const config = require("./config.js");
 const { prefix, token } = config;
 
 function Activity() {
-  return bot.user.setActivity(`/help | Made by Derpy`, { type: "PLAYING" });
+  return bot.user.setActivity(`${prefix}help | Made by Derpy`, { type: "PLAYING" });
 }
 
 bot.on("ready", async () => {
