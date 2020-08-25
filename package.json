@@ -1,0 +1,14 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "my first bot",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.0.2"
+  },
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Derpy",
+  "license": "ISC"
+}
